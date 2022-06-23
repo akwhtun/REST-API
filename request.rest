@@ -1,0 +1,30 @@
+GET http://localhost:3000/orders
+
+###
+
+GET http://localhost:3000/orders/62b469b5d966c97d2478c6e7c
+
+###
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+    "name": "A",
+    "order": "book",
+    "address": "1st Street"
+}
+
+###
+
+PATCH http://localhost:3000/orders/62b47030e7c91c6f09f7d1dd
+Content-Type: application/json
+
+{
+    "name": "Taylor",
+    "order": "bicycle",
+    "address": "Ygn",
+    "quantity": 1
+}
+
+###
+DELETE  http://localhost:3000/orders/62b46fc4e7c91c6f09f7d1cf
